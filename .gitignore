@@ -1,4 +1,4 @@
 secrets.py
-secrets.pyc
+*.pyc
 html/secrets.php
 db_backup.sh
