@@ -38,17 +38,8 @@ if ($display == 'urls') {
     $sqlFrom = $sqlFrom. " left join url_meta um on t0.url_md5 = um.url_md5 ";
 	$sqlGroup = "group by t0.url, um.title, um.description, um.image ";
 }
+
 include_once('secrets.php');
-//$servername = "localhost";
-//$username = "arlanda";
-//$password = "arlanda";
-//$dbname  =  "ontolicious";
-// Create connection
-//$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-//if ($conn->connect_error) {
-//    die("Connection failed: " . $conn->connect_error);
-//}
 
 $sql = "select count(*) as instances from tags;";
 $result = $conn->query($sql);
